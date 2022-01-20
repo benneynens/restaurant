@@ -1,4 +1,4 @@
-const pageElements = (function() {
+export let pageElements = (() => {
     //get main content area
     const contentArea = document.getElementById('content');
 
@@ -12,5 +12,3 @@ const pageElements = (function() {
 
     return {tabsArea, displayArea}
 })();
-
-export {pageElements}

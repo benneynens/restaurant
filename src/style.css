@@ -1,0 +1,8 @@
+.tab {
+    width: 100px;
+    height: 30px;
+    background-color: beige;
+    border: 1px solid grey;
+    display: inline;
+    padding: 10px;
+}

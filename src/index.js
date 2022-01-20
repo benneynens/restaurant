@@ -1,8 +1,7 @@
-// import {restaurantDetails, restaurantMenu} from './restaurant-summary.js';
-// import {createTabElement} from './tab-creator.js';
-// import {displayDetails} from './displayDetails.js';
-import {pageElements} from './onPageElements';
-// import './style.css'
+import loadPage from './loadPage.js';
+// import {pageElements} from './pageElements';
+// import {pagesArray} from './pagesArray.js'
+import './style.css'
 
 
 /**
@@ -15,10 +14,11 @@ import {pageElements} from './onPageElements';
  * get the page content to change when the tabs are clicked
  */
 
+loadPage(null);
 
 //test initial content
-pageElements.tabsArea.innerHTML = 'Tabs Area';
-pageElements.displayArea.innerHTML = 'Display Area';
+// pageElements.tabsArea.innerHTML = 'Tabs Area';
+// pageElements.displayArea.innerHTML = 'Display Area';
 
 // //add content
 //     //tabs
