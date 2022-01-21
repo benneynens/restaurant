@@ -1,6 +1,4 @@
 import loadPage from './loadPage.js';
-// import {pageElements} from './pageElements';
-// import {pagesArray} from './pagesArray.js'
 import './style.css'
 
 
@@ -15,18 +13,3 @@ import './style.css'
  */
 
 loadPage(null);
-
-//test initial content
-// pageElements.tabsArea.innerHTML = 'Tabs Area';
-// pageElements.displayArea.innerHTML = 'Display Area';
-
-// //add content
-//     //tabs
-//     const allTabs = [ 'Home', 'Menu' ];
-//     allTabs.forEach(function(tab){
-//         pageVals.tabsArea.appendChild( createTabElement(tab) );
-//     });
-
-
-// //initial page load
-//     displayDetails( allTabs[0] )

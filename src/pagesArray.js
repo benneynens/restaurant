@@ -5,10 +5,16 @@ const pagesArray = (() => {
 
     let pagesArray = [];
 
-    pagesArray = [...pagesArray,mainPage, menuPage];
+    const addNew = (newPage) => pagesArray.push(newPage)
 
-    return pagesArray;
+    const getArray = () => pagesArray;
 
+    return {getArray, addNew};
 })();
+
+//add new pages here...
+pagesArray.addNew(mainPage);
+pagesArray.addNew(menuPage);
+
 
 export {pagesArray};

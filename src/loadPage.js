@@ -1,6 +1,8 @@
 import {pageElements} from './pageElements';
 import {pagesArray} from './pagesArray.js';
 
+console.log(pagesArray);
+
 const createTabElement = function (title) {
     const element = document.createElement('div');
     element.innerHTML = title;
@@ -13,7 +15,7 @@ const createTabElement = function (title) {
 
 const displayTabElements = function () {
     //get titles
-    let tabTitles = pagesArray.map(x => x.title);
+    let tabTitles = pagesArray.getArray().map(x => x.title);
 
     for (let i = 0; i < tabTitles.length; i++) {
         let tabElement = createTabElement( tabTitles[i] );
@@ -27,9 +29,9 @@ function loadPage (page) {
     //if first load, then...
     if (page == null) {
         displayTabElements();
-        targetPage = pagesArray[0];
+        targetPage = pagesArray.getArray()[0];
     } else {
-        targetPage = pagesArray.filter( function (x) {
+        targetPage = pagesArray.getArray().filter( function (x) {
             return x.title == page;
            } )[0];
     }
